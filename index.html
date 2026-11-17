@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c35">
+  <meta name="description" content="Unofficial JUSC quick-access companion app">
+  <title>JUSC Companion</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand-mark">J</div>
+    <div>
+      <div class="brand-name">JUSC</div>
+      <div class="brand-sub">Jahangirnagar University School & College</div>
+    </div>
+    <a class="lang" href="https://www.jusc.edu.bd/" aria-label="Open official website">বাংলা</a>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <div class="eyebrow">WELCOME</div>
+      <h1>জাহাঙ্গীরনগর বিশ্ববিদ্যালয়<br>স্কুল অ্যান্ড কলেজ</h1>
+      <p>প্রয়োজনীয় সেবা ও তথ্য এক জায়গায়</p>
+      <a class="primary" href="https://www.jusc.edu.bd/">Visit Official Website <span>↗</span></a>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Quick access</h2><span>দ্রুত প্রবেশ</span>
+      </div>
+      <div class="grid">
+        <a class="tile" href="https://jusc.edu.bd/notices/general-notices">
+          <span class="tile-icon">📢</span><strong>Notice Board</strong><small>সকল নোটিশ</small>
+        </a>
+        <a class="tile" href="https://ac.jusc.edu.bd/">
+          <span class="tile-icon">🎓</span><strong>Student Login</strong><small>শিক্ষার্থী লগইন</small>
+        </a>
+        <a class="tile" href="https://ac.jusc.edu.bd/teacher/">
+          <span class="tile-icon">👩‍🏫</span><strong>Teacher Login</strong><small>শিক্ষক লগইন</small>
+        </a>
+        <a class="tile" href="https://ac.jusc.edu.bd/staff/">
+          <span class="tile-icon">🧑‍💼</span><strong>Staff Login</strong><small>স্টাফ লগইন</small>
+        </a>
+        <a class="tile" href="https://ac.jusc.edu.bd/smsadmin/">
+          <span class="tile-icon">🔐</span><strong>Admin Login</strong><small>প্রশাসনিক লগইন</small>
+        </a>
+        <a class="tile" href="https://www.jusc.edu.bd/">
+          <span class="tile-icon">💳</span><strong>Online Payment</strong><small>ওয়েবসাইটে পেমেন্ট</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Official information</h2>
+      <p>এই অ্যাপটি দ্রুত লিংক ও নেভিগেশনের জন্য তৈরি করা একটি অনানুষ্ঠানিক ডেমো। লগইন, নোটিশ ও পেমেন্টের জন্য JUSC-এর আসল ওয়েবসাইটে যাবেন।</p>
+      <a href="https://www.jusc.edu.bd/">jusc.edu.bd ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Unofficial companion • Not affiliated with JUSC</p>
+  </footer>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>
